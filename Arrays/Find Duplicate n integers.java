@@ -5,6 +5,8 @@ package Arrays;
 * Given an array nums containing n + 1 integers where each integer is between 1 and n (inclusive),
 *  prove that at least one duplicate number must exist. Assume that there is only one duplicate number,
 *  find the duplicate one.
+*   Method 1- Sort the array and find repeating element
+*   Method 2 - Use Hashing: Make an array of size n then-> hash[arr[i]]++; if the value if >1 then the number is repeating
 *
 * LEETCODE -287
 * */
