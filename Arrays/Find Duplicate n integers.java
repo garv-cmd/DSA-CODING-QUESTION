@@ -7,7 +7,7 @@ package Arrays;
 *  find the duplicate one.
 *   Method 1- Sort the array and find repeating element
 *   Method 2 - Use Hashing: Make an array of size n then-> hash[arr[i]]++; if the value if >1 then the number is repeating
-*
+*   Method 3 - Use HashSet
 * LEETCODE -287
 * */
 class Q1 {
