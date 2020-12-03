@@ -1,4 +1,5 @@
 //leetcode - 3
+//https://practice.geeksforgeeks.org/problems/length-of-the-longest-substring/0
 class Solution {
     public int lengthOfLongestSubstring(String s) {
         Map<Character,Integer> map = new HashMap<>();
