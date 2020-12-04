@@ -1,4 +1,5 @@
 //leetcode - 42
+//https://practice.geeksforgeeks.org/problems/trapping-rain-water-1587115621/1/?category[]=Arrays&company[]=Amazon&problemStatus=unsolved&problemType=functional&page=1&query=category[]Arrayscompany[]AmazonproblemStatusunsolvedproblemTypefunctionalpage1#
 class Solution {
     public int trap(int[] height) {
      
