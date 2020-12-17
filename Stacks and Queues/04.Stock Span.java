@@ -24,7 +24,8 @@ public class Main{
     StringBuilder sb = new StringBuilder();
 
     for(int val: a){
-      sb.append(val + "\n");
+      sb.append(val + "
+");
     }
     System.out.println(sb);
   }
@@ -44,7 +45,22 @@ public static void main(String[] args) throws Exception {
 
  public static int[] solve(int[] arr){
    // solve
-   return null;
+   int res[] = new int[arr.length];
+   Stack<Integer> st = new Stack<>();
+   res[0] = 1;
+   st.push(0);
+   for(int i=1;i<arr.length;i++){
+       while(st.size()>0 && arr[i]>arr[st.peek()]){
+           st.pop();
+       }
+       if(st.isEmpty()){
+           res[i] = i+1;
+       }else{
+           res[i] = i-st.peek();
+       }
+       st.push(i);
+   }
+   return res;
  }
 
 }
