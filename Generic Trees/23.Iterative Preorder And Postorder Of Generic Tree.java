@@ -98,6 +98,7 @@ public class Main {
 
     Node root = construct(arr);
     IterativePreandPostOrder(root);
+    
   }
 
 }
