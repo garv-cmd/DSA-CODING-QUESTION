@@ -1,4 +1,34 @@
 //leetcode - 25
+
+ ListNode curr = head;
+        ListNode prev = null;
+        ListNode fwd = null;
+        int count=0;
+        int len = 0;
+        ListNode temp = head;
+        while(temp!=null){
+            temp=temp.next;
+            len++;
+        }
+        if(len>=k){
+        while(curr!=null && count<k){
+            fwd = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = fwd;
+            
+            count++;
+        }
+        }
+        else{
+            return head;
+        }
+        if(curr!=null){
+            head.next = reverseKGroup(fwd,k);
+        }
+        return prev;
+
+
 class Solution {
     public ListNode reverseKGroup(ListNode head, int k) {
         if(head==null || k==1)
@@ -30,6 +60,9 @@ class Solution {
         
     }
 }
+
+
+
 //GFG - https://practice.geeksforgeeks.org/problems/reverse-a-linked-list-in-groups-of-given-size/1#
  public static Node reverse(Node head, int k)
     {
