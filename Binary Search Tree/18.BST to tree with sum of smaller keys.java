@@ -1,4 +1,10 @@
 https://www.geeksforgeeks.org/bst-tree-sum-smaller-keys/
+
+class Sum { 
+  
+    int addvalue = 0; 
+} 
+
 void addSmallerUtil(Node node, Sum sum) 
     { 
   
